@@ -32,7 +32,7 @@
 import User from './components/User.vue';
 import Input from './components/Input.vue';
 import Selector from './components/Selector.vue';
-import {CryptoConvert} from 'crypto-convert';
+import CryptoConvert from 'crypto-convert';
 import Favourite from './components/Favourite.vue';
 
 const convert = new CryptoConvert();
