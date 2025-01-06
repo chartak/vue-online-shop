@@ -1,6 +1,6 @@
 <template>
       <div class="flex justify-between items-center">
-        <h2 class="text-3xl font-bold mb-8">Sneakers</h2>
+        <h2 class="text-3xl font-bold mb-8">Shoes</h2>
         
         <div class="flex gap-4">
           <select @change="onChangeSelect" class="bg-white py-2 px-3 border rounded-md outline-none">

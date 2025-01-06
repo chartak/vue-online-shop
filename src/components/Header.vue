@@ -4,8 +4,8 @@
         <div class="flex items-center  gap-4">
           <img src="/logo.png" alt="logo" class="w-10"/>
           <div>
-            <h2 class="text-xl font-bold uppercase">Sneakers</h2>
-            <p class="text-slate-500">Best sneakers store</p>
+            <h2 class="text-xl font-bold uppercase">Men's shoes</h2>
+            <p class="text-slate-500">Online store</p>
           </div>
         </div>
       </router-link>
