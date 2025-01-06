@@ -1,49 +1,33 @@
 <template>
-    <div className="user">
-        <button @click="deleteUser(currindex)">Delete</button>
-        <h3>{{ user.name }}</h3>
-        <p>{{ user.email }} -<b>{{ user.pass }}</b></p>
-    </div>
+    <h3>{{ count }}</h3>
+    <button @click="increment">+</button>
+        
 </template>
 
-<script>
-export default {
-    props: {
-        user: {
-            type: Object,
-            required: true
-        },
-        currindex: {
-            type: Number,
-            required: true
-        },
-        deleteUser:{
-            type: Function,
-            required: true
-        }
+<script setup>
+    import {ref} from 'vue';
+
+    const count = ref(0);
+
+    function increment(){
+        count.value++;
+        console.log(count);
     }
-}
+
+// export default {
+//     data() {
+//         return {
+//             count: 0
+//         }
+//     },
+//     methods: {
+//         increment() {
+//             this.count++
+//         }
+//     }
+// }
 </script>
 
 <style scoped>
-.user {
-    background-color: azure;
-}
 
-button {
-    border: 0;
-    border-radius: 5px;
-    outline: none;
-    padding: 10px 15px;
-    background: #d66c75;
-    color: #7f1629;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 500ms ease;
-    float: right;
-}
-
-button:hover {
-    transform: translateY( -5px);
-}
 </style>
